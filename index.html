@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Town & Country Market — Atoka, Oklahoma</title>
+  <meta name="description" content="Town & Country Market is your hometown grocery store in Atoka, Oklahoma. Fresh produce, quality meats, weekly specials, and friendly service since day one. Open Mon-Sat 8AM-7PM." />
+
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#2d6a4f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="T&C Market" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="icons/icon-192.svg" />
+  <link rel="apple-touch-icon" href="icons/icon-192.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <span class="logo-icon">🏪</span>
+        Town & Country Market
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#departments" class="nav-link">Departments</a>
+        <a href="#specials" class="nav-link">Weekly Specials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://www.facebook.com/TownandCountryMarket.Atoka.OK/" target="_blank" rel="noopener" class="nav-link nav-link-fb">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="storefront.jpg" alt="Town & Country Market storefront at night in Atoka, Oklahoma" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">Serving Atoka, OK since day one</div>
+      <h1 class="hero-title">
+        Your Hometown<br/>Grocery Store
+      </h1>
+      <p class="hero-description">
+        Quality meats, fresh produce, and unbeatable weekly specials — 
+        all with the friendly, small-town service you deserve.
+      </p>
+      <div class="hero-actions">
+        <a href="#specials" class="btn btn-primary" id="hero-cta">This Week's Specials</a>
+        <a href="#contact" class="btn btn-outline" id="hero-cta-2">Visit Us</a>
+      </div>
+      <div class="hero-hours">
+        <span class="hours-dot"></span>
+        Open Monday – Sunday &nbsp;|&nbsp; 8:00 AM – 7:00 PM
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-centered">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">A grocery store that's <em>home.</em></h2>
+        <p class="about-desc">
+          Town & Country Market is a family-owned grocery store operated by Robert and Debbie Powell. 
+          We believe in stocking our shelves with quality products at honest prices, and treating every 
+          customer like a neighbor — because you are.
+        </p>
+        <p class="about-desc">
+          From our hand-cut meats to our hand-picked produce, everything we do is about making your 
+          shopping experience feel personal. We're not a big chain — we're <strong>your</strong> store.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">4,300+</span>
+            <span class="stat-label">Facebook Followers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">622</span>
+            <span class="stat-label">E Court Street</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">7</span>
+            <span class="stat-label">Days a Week</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPARTMENTS ===== -->
+  <section class="section section-alt" id="departments">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Departments</span>
+        <h2 class="section-title">Everything you need, under one roof</h2>
+      </div>
+      <div class="departments-grid">
+        <div class="dept-card" id="dept-produce">
+          <div class="dept-image">
+            <img src="produce-real.jpg" alt="Fresh produce section at Town & Country Market with apples, oranges, and vegetables" />
+          </div>
+          <div class="dept-info">
+            <h3 class="dept-name">Fresh Produce</h3>
+            <p class="dept-desc">Hand-selected fruits and vegetables delivered fresh. From sweet Vidalia onions to crisp bell peppers.</p>
+          </div>
+        </div>
+        <div class="dept-card" id="dept-meat">
+          <div class="dept-image">
+            <img src="meat-real.jpg" alt="Meat department at Town & Country Market with fresh cuts and weekly specials" />
+          </div>
+          <div class="dept-info">
+            <h3 class="dept-name">Quality Meats</h3>
+            <p class="dept-desc">USDA Select beef, fresh chicken, and more. Our meat counter is the heart of the store.</p>
+          </div>
+        </div>
+        <div class="dept-card" id="dept-grocery">
+          <div class="dept-image-placeholder dept-grocery-bg">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          </div>
+          <div class="dept-info">
+            <h3 class="dept-name">Grocery & Pantry</h3>
+            <p class="dept-desc">All your everyday essentials — canned goods, baking supplies, snacks, beverages, and more.</p>
+          </div>
+        </div>
+        <div class="dept-card" id="dept-dairy">
+          <div class="dept-image-placeholder dept-dairy-bg">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/></svg>
+          </div>
+          <div class="dept-info">
+            <h3 class="dept-name">Dairy & Frozen</h3>
+            <p class="dept-desc">Blue Bell ice cream, fresh milk, cheese, frozen meals, and all the cold favorites your family loves.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WEEKLY SPECIALS ===== -->
+  <section class="section" id="specials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Weekly Specials</span>
+        <h2 class="section-title">This week's best deals</h2>
+        <p class="section-subtitle">Sale begins Wednesday, April 30<sup>th</sup>, 2026</p>
+      </div>
+      <div class="specials-grid">
+        <div class="special-card" id="special-1">
+          <div class="special-icon">🥩</div>
+          <h3 class="special-name">Fresh Pork Steak</h3>
+          <p class="special-detail">Family Pack</p>
+          <div class="special-price">$2.29<span>/lb</span></div>
+        </div>
+        <div class="special-card" id="special-2">
+          <div class="special-icon">🥩</div>
+          <h3 class="special-name">Beef Sirloin Steak</h3>
+          <p class="special-detail">USDA Select</p>
+          <div class="special-price">$7.99<span>/lb</span></div>
+        </div>
+        <div class="special-card" id="special-3">
+          <div class="special-icon">🍖</div>
+          <h3 class="special-name">Prairie Fresh Pork Tenderloins</h3>
+          <p class="special-detail">Premium Cut</p>
+          <div class="special-price">$6.49<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-4">
+          <div class="special-icon">🍗</div>
+          <h3 class="special-name">Family Pack Fryer Wings</h3>
+          <p class="special-detail">Fresh</p>
+          <div class="special-price">$2.29<span>/lb</span></div>
+        </div>
+        <div class="special-card" id="special-5">
+          <div class="special-icon">🥓</div>
+          <h3 class="special-name">Jimmy Dean Bacon</h3>
+          <p class="special-detail">Premium</p>
+          <div class="special-price">$3.99<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-6">
+          <div class="special-icon">🌭</div>
+          <h3 class="special-name">Eckrich Smoked Sausage</h3>
+          <p class="special-detail">Regular or Polish</p>
+          <div class="special-price">$2.99<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-7">
+          <div class="special-icon">🥩</div>
+          <h3 class="special-name">J.C. Potter Sausage</h3>
+          <p class="special-detail">2 lb roll</p>
+          <div class="special-price">$5.99<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-8">
+          <div class="special-icon">🍗</div>
+          <h3 class="special-name">Chicken Nuggets</h3>
+          <p class="special-detail">Fast Fixin'</p>
+          <div class="special-price">$3.99<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-9">
+          <div class="special-icon">🥔</div>
+          <h3 class="special-name">Russet Potatoes</h3>
+          <p class="special-detail">10 lb bag</p>
+          <div class="special-price">$2.99<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-10">
+          <div class="special-icon">🫑</div>
+          <h3 class="special-name">Fresh Bell Peppers</h3>
+          <p class="special-detail">Green</p>
+          <div class="special-price">$1.49<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-11">
+          <div class="special-icon">🍓</div>
+          <h3 class="special-name">Red Ripe Strawberries</h3>
+          <p class="special-detail">1 lb container</p>
+          <div class="special-price">2 for $5</div>
+        </div>
+        <div class="special-card" id="special-12">
+          <div class="special-icon">🍍</div>
+          <h3 class="special-name">Food Club Pineapple</h3>
+          <p class="special-detail">20 oz can</p>
+          <div class="special-price">$1.49<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-13">
+          <div class="special-icon">🍕</div>
+          <h3 class="special-name">DiGiorno Pizza</h3>
+          <p class="special-detail">Rising Crust</p>
+          <div class="special-price">$6.49<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-14">
+          <div class="special-icon">🍖</div>
+          <h3 class="special-name">Head Country BBQ Sauce</h3>
+          <p class="special-detail">Oklahoma's Finest</p>
+          <div class="special-price">$3.99<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-15">
+          <div class="special-icon">🫘</div>
+          <h3 class="special-name">Wolf Chili</h3>
+          <p class="special-detail">Assorted Varieties</p>
+          <div class="special-price">2 for $5</div>
+        </div>
+        <div class="special-card" id="special-16">
+          <div class="special-icon">🧴</div>
+          <h3 class="special-name">Simply Tide Laundry Soap</h3>
+          <p class="special-detail">Liquid Detergent</p>
+          <div class="special-price">$8.99<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-17">
+          <div class="special-icon">🫗</div>
+          <h3 class="special-name">Food Club Vegetable Oil</h3>
+          <p class="special-detail">48 oz</p>
+          <div class="special-price">$6.99<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-18">
+          <div class="special-icon">🍵</div>
+          <h3 class="special-name">Food Club Tea Bags</h3>
+          <p class="special-detail">24 ct, Family Size</p>
+          <div class="special-price">$1.29<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-19">
+          <div class="special-icon">🥤</div>
+          <h3 class="special-name">Dr Pepper</h3>
+          <p class="special-detail">24 Pack Cans</p>
+          <div class="special-price">$13.99<span> each</span></div>
+        </div>
+        <div class="special-card" id="special-20">
+          <div class="special-icon">🧀</div>
+          <h3 class="special-name">American Cheese</h3>
+          <p class="special-detail">5 lb block</p>
+          <div class="special-price">$14.99<span> each</span></div>
+        </div>
+      </div>
+      <div class="specials-cta">
+        <a href="https://www.facebook.com/TownandCountryMarket.Atoka.OK/" target="_blank" rel="noopener" class="btn btn-primary" id="specials-fb-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          See all specials on Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / LOCATION ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Visit Us</span>
+        <h2 class="section-title">Come see us today</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card" id="contact-address">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h3 class="contact-label">Address</h3>
+              <p class="contact-value">622 E Court Street<br/>Atoka, OK 74525</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-phone">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h3 class="contact-label">Phone</h3>
+              <a href="tel:5808892153" class="contact-value contact-link">(580) 889-2153</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h3 class="contact-label">Email</h3>
+              <a href="mailto:rpowelljr1@gmail.com" class="contact-value contact-link">rpowelljr1@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-hours">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h3 class="contact-label">Hours</h3>
+              <p class="contact-value">Monday – Sunday<br/>8:00 AM – 7:00 PM</p>
+            </div>
+          </div>
+          <a href="https://www.facebook.com/TownandCountryMarket.Atoka.OK/" target="_blank" rel="noopener" class="btn btn-primary btn-fb" id="contact-fb-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Follow us on Facebook
+          </a>
+        </div>
+        <div class="contact-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.7!2d-96.120629!3d34.3833761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b4b4ef56f1a307%3A0x7d9394e4cd65ca7c!2sTown%20%26%20Country%20Market!5e0!3m2!1sen!2sus!4v1714700000000!5m2!1sen!2sus"
+            width="100%" 
+            height="100%" 
+            style="border:0; border-radius: 16px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Town & Country Market location on Google Maps"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">🏪 Town & Country Market</span>
+          <p class="footer-tagline">Your hometown grocery store in Atoka, Oklahoma.</p>
+        </div>
+        <div class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#departments">Departments</a>
+          <a href="#specials">Specials</a>
+          <a href="#contact">Contact</a>
+          <a href="https://www.facebook.com/TownandCountryMarket.Atoka.OK/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Town & Country Market. All rights reserved.</p>
+        <p class="footer-credit">Website by <a href="https://luvionflow.com" target="_blank" rel="noopener">Luvion Flow</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

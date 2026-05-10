@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="32" fill="#2d6a4f"/>
+  <g transform="translate(96,96)">
+    <!-- Store roof -->
+    <polygon points="-52,-30 0,-55 52,-30" fill="#fff" opacity="0.95"/>
+    <!-- Store body -->
+    <rect x="-46" y="-30" width="92" height="60" rx="4" fill="#fff" opacity="0.9"/>
+    <!-- Door -->
+    <rect x="-10" y="0" width="20" height="30" rx="3" fill="#2d6a4f" opacity="0.8"/>
+    <!-- Windows -->
+    <rect x="-40" y="-20" width="22" height="16" rx="2" fill="#2d6a4f" opacity="0.5"/>
+    <rect x="18" y="-20" width="22" height="16" rx="2" fill="#2d6a4f" opacity="0.5"/>
+    <!-- Awning stripes -->
+    <rect x="-46" y="-30" width="92" height="6" rx="2" fill="#1b4332"/>
+  </g>
+  <!-- Text -->
+  <text x="96" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="16" fill="#fff" letter-spacing="1">T&amp;C MARKET</text>
+</svg>
