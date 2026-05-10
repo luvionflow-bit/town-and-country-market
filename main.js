@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ---- Scroll reveal animations ----
+  // ---- Scroll reveal animations (disabled on mobile via CSS) ----
   const revealElements = document.querySelectorAll(
     '.dept-card, .special-card, .contact-card, .about-text, .about-image, .section-header'
   );
@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       el.style.transitionDelay = `${i * 0.08}s`;
     });
   });
+
 
   // ---- PWA: Register Service Worker ----
   if ('serviceWorker' in navigator) {
